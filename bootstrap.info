@@ -1,0 +1,16 @@
+name = Bootstrap
+description = A simple theme build on Twitter Bootstrap
+version = 0.1 Alpha
+core = 7.x
+
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/bootstrap-drupal.css
+
+scripts[] = js/bootstrap-twipsy.js
+
+regions[header] = Header
+regions[help] = Help
+regions[highlighted] = Highlighted
+regions[content] = Content
+regions[footer-col1] = Footer Left
+regions[footer-col2] = Footer Right
