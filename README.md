@@ -3,6 +3,8 @@
 
 Author: Henrik Jepsen <hekjje@gmail.com>
 
+This is my first try to make a Drupal theme
+
 ###Twitter Bootsrap
 You can find Twitter Bootstrap on http://twitter.github.com/bootstrap/
 
