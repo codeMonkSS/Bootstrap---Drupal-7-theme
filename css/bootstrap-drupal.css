@@ -1,1 +1,51 @@
-body.logged-in>div.topbar{position:static}body.logged-in>div.topbar>div.fill>div.container>div#login>p{color:#fff}body.logged-in>div.topbar>div.fill>div.container>div#login>p>a{display:block;float:right;height:30px;width:30px;background:url(g/icons/54-lock.png) no-repeat center center;text-indent:-9999px;margin:5px 0 5px 5px}body>div.topbar>div.fill>div.container>div#login>form{display:none}body>div.topbar>div.fill>div.container>div#login>form>div>.btn{border:0 none}body>div.topbar>div.fill>div.container>div#login>.showlogin{height:30px;width:30px;background:url(g/icons/158-wrench-2.png) no-repeat center center;margin:5px 0 5px 5px;cursor:pointer}body>.container{padding-top:45px}.fadein{position:relative;height:340px;width:452px;overflow:hidden;border:1px solid #ddd;border-radius:4px 4px 4px 4px;box-shadow:0 1px 1px rgba(0,0,0,0.075);float:left;margin:0 0 18px 0;padding:4px}.fadein img{position:absolute;left:0;top:0}footer{margin-bottom:15px}
+body.logged-in > div.topbar {
+  position: static;
+}
+body.logged-in > div.topbar > div.fill > div.container > div#login > p {
+  color: #fff;
+}
+body.logged-in > div.topbar > div.fill > div.container > div#login > p > a {
+  display: block;
+  float: right;
+  height: 30px;
+  width: 30px;
+  background: url(g/icons/54-lock.png) no-repeat center center;
+  text-indent: -9999px;
+  margin: 5px 0 5px 5px;
+}
+body > div.topbar > div.fill > div.container > div#login > form {
+  display: none;
+}
+body > div.topbar > div.fill > div.container > div#login > form > div > .btn {
+  border: 0 none;
+}
+body > div.topbar > div.fill > div.container > div#login > .showlogin {
+  height: 30px;
+  width: 30px;
+  background: url(g/icons/158-wrench-2.png) no-repeat center center;
+  margin: 5px 0 5px 5px;
+  cursor: pointer;
+}
+body > .container {
+  padding-top: 45px;
+}
+.bootstrap.gallery > .fadein {
+  position: relative;
+  height: 340px;
+  width: 452px;
+  overflow: hidden;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  float: left;
+  margin: 0 0 18px 0;
+  padding: 4px;
+}
+.bootstrap.gallery > .fadein > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+footer {
+  margin-bottom: 15px;
+}

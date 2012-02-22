@@ -54,23 +54,27 @@ body {
     }
 }
 
-.fadein { 
-    position:relative; 
-    height:340px; 
-    width:452px;
-    overflow: hidden;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-    float: left;
-    margin: 0 0 18px 0;
-    padding: 4px;
-}
-.fadein img { 
-    position:absolute; 
-    left:0; 
-    top:0; 
-}
+.bootstrap.gallery{
+    > .fadein { 
+        position:relative; 
+        height:340px; 
+        width:452px;
+        overflow: hidden;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+        float: left;
+        margin: 0 0 18px 0;
+        padding: 4px;
+        
+        > img { 
+            position:absolute; 
+            left:0; 
+            top:0; 
+        }
+        
+    }
+} 
 
 footer {
     margin-bottom: 15px;

@@ -62,7 +62,7 @@
 		<?php
 		if(!empty($node->field_wishlist_item_i_product)){
 		?>
-		<div class="gallery">
+		<div class="bootstrap gallery">
 		  <div class="fadein">
 			<?php
 				foreach($node->field_wishlist_item_i_product['und'] as $imgRaw){
@@ -74,7 +74,7 @@
 			<?php
 				foreach($node->field_wishlist_item_i_product['und'] as $imgRaw){
 					echo '<li><a href="'.file_create_url($imgRaw['uri']).'">';
-					echo '<img class="twipsytip" title="'.$imgRaw['title'].'" src="'.image_style_url('square_thumbnail90x90', $imgRaw['uri']).'" />';
+					echo '<img title="'.$imgRaw['title'].'" data-large="'.image_style_url('large', $imgRaw['uri']).'" src="'.image_style_url('square_thumbnail90x90', $imgRaw['uri']).'" />';
 					echo '</a></li>';
 				}
 			?>
