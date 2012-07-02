@@ -1,6 +1,6 @@
 name = Bootstrap
 description = A simple theme build on Twitter Bootstrap
-version = 0.1 Alpha
+version = 0.2 Alpha
 core = 7.x
 
 stylesheets[all][] = css/bootstrap.min.css
