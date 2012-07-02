@@ -16,6 +16,9 @@ body.logged-in > div.topbar > div.fill > div.container > div#login > p > a {
 body > div.topbar > div.fill > div.container > div#login > form {
   display: none;
 }
+body > div.topbar > div.fill > div.container > div#login > form > div > div.form-item {
+  display: inline;
+}
 body > div.topbar > div.fill > div.container > div#login > form > div > .btn {
   border: 0 none;
 }
