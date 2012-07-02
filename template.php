@@ -148,7 +148,7 @@ function bootstrap_form_element($variables) {
   if (!empty($element['#attributes']['disabled'])) {
     $attributes['class'][] = 'form-disabled';
   }
-  if($element['nowrapper'] === false){
+  if(!isset($element['nowrapper']) or $element['nowrapper'] === false){
     $output = '<div' . drupal_attributes($attributes) . '>' . "\n";
   }
   // If #title is not set, we don't display any label or required marker.
@@ -180,7 +180,7 @@ function bootstrap_form_element($variables) {
   if (!empty($element['#description'])) {
     $output .= '<div class="description">' . $element['#description'] . "</div>\n";
   }
-  if($element['nowrapper'] === false){
+  if(!isset($element['nowrapper']) or $element['nowrapper'] === false){
     $output .= "</div>\n";
   }
   return $output;
