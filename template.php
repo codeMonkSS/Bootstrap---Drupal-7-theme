@@ -118,7 +118,7 @@ function bootstrap_button($variables) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
 
-  return '<button' . drupal_attributes($element['#attributes']) . ' >'.$element['#value'].'</buttons>';
+  return '<button' . drupal_attributes($element['#attributes']) . ' >'.$element['#value'].'</button>';
 }
 
 function bootstrap_form_element($variables) {
