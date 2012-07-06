@@ -60,21 +60,21 @@
 	</div>
 	<div class="span8">
 		<?php
-		if(!empty($node->field_wishlist_item_i_product)){
+		if(!empty($node->field_wishlist_image_product)){
 		?>
 		<div class="bootstrap gallery">
 		  <div class="fadein">
 			<?php
-				foreach($node->field_wishlist_item_i_product['und'] as $imgRaw){
-					echo '<img title="'.$imgRaw['title'].'" src="'.image_style_url('bootstrap_medium_452x340', $imgRaw['uri']).'" />';
+				foreach($node->field_wishlist_image_product['und'] as $imgRaw){
+					echo '<img title="'.$imgRaw['title'].'" src="'.image_style_url('bootstrap_medium_442x330', $imgRaw['uri']).'" />';
 				}
 			?>
 		  </div>
 		  <ul class="media-grid">
 			<?php
-				foreach($node->field_wishlist_item_i_product['und'] as $imgRaw){
+				foreach($node->field_wishlist_image_product['und'] as $imgRaw){
 					echo '<li><a href="'.file_create_url($imgRaw['uri']).'">';
-					echo '<img title="'.$imgRaw['title'].'" data-large="'.image_style_url('bootstrap_medium_452x340', $imgRaw['uri']).'" src="'.image_style_url('bootstrap_square_thumbnail_90x90', $imgRaw['uri']).'" />';
+					echo '<img title="'.$imgRaw['title'].'" data-large="'.image_style_url('bootstrap_medium_442x330', $imgRaw['uri']).'" src="'.image_style_url('bootstrap_square_thumbnail_90x90', $imgRaw['uri']).'" />';
 					echo '</a></li>';
 				}
 			?>
