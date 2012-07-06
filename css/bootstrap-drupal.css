@@ -46,8 +46,8 @@ body > .container {
 }
 .bootstrap.gallery > .fadein > img {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 10px;
+  top: 10px;
 }
 footer {
   margin-bottom: 15px;
