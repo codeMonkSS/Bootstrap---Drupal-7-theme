@@ -1,3 +1,9 @@
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery('#b-slider').bslider({'height':'340px','width':'452px','showControles' : false});
+		jQuery('#b-slider').bslider('startShow');
+	});
+</script>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <h1><?= render($title) ?></h1>
   <div class="row">
@@ -62,23 +68,18 @@
 		<?php
 		if(!empty($node->field_wishlist_image_product)){
 		?>
-		<div class="bootstrap gallery">
-		  <div class="fadein">
-			<?php
-				foreach($node->field_wishlist_image_product['und'] as $imgRaw){
-					echo '<img title="'.$imgRaw['title'].'" src="'.image_style_url('bootstrap_medium_442x330', $imgRaw['uri']).'" />';
-				}
-			?>
-		  </div>
-		  <ul class="media-grid">
-			<?php
-				foreach($node->field_wishlist_image_product['und'] as $imgRaw){
-					echo '<li><a href="'.file_create_url($imgRaw['uri']).'">';
-					echo '<img title="'.$imgRaw['title'].'" data-large="'.image_style_url('bootstrap_medium_442x330', $imgRaw['uri']).'" src="'.image_style_url('bootstrap_square_thumbnail_90x90', $imgRaw['uri']).'" />';
-					echo '</a></li>';
-				}
-			?>
-		  </ul>
+		<div id="b-slider">
+			<div class="b-slider-preview">
+				<ul class="b-slider-grid">
+					<?php
+						foreach($node->field_wishlist_image_product['und'] as $imgRaw){
+							echo '<li><a href="'.file_create_url($imgRaw['uri']).'">';
+							echo '<img title="'.$imgRaw['title'].'" data-b-slider-main-url="'.image_style_url('bootstrap_medium_442x330', $imgRaw['uri']).'" src="'.image_style_url('bootstrap_square_thumbnail_90x90', $imgRaw['uri']).'" />';
+							echo '</a></li>';
+						}
+					?>
+				</ul>
+			</div>
 		</div>
 		<?php
 		}

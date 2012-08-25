@@ -5,8 +5,9 @@ core = 7.x
 
 stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/bootstrap-drupal.css
+stylesheets[all][] = css/b-slider.css
 
-scripts[] = js/bootstrapslideshow.js
+scripts[] = js/b-slider.js
 
 regions[header] = Header
 regions[help] = Help
