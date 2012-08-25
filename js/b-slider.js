@@ -8,7 +8,7 @@
 		
 		init : function(options){
 		    var settings = $.extend( {
-                  'height'          : '701px',
+                  'height'          : '620px',
                   'width'           : '930px',
                   'showControles'   : 'true',
                 }, options);

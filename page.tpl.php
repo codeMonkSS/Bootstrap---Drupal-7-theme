@@ -1,7 +1,7 @@
 <div class="topbar">
 	<div class="fill">
 		<div class="container">
-			<a class="brand" href="#"><?= $site_name ?></a>
+			<a class="brand" href="/"><?= $site_name ?></a>
 			<?php print theme('links__system_main_menu', array(
 			      'links' => $main_menu,
 			      'attributes' => array(
