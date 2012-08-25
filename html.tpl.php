@@ -11,13 +11,6 @@
 					jQuery('.showlogin').hide();
 					jQuery('#horizontal-login-block').show();
 				});
-				//jQuery('.fadein img:gt(0)').hide();
-				//setInterval(function(){
-				//	jQuery('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');
-				//	}, 
-				//	6000
-				//);
-				jQuery('.bootstrap.gallery').bootstrapSlideShow();
 			});
 		</script>
 		<?php if(theme_get_setting('ga_use') and theme_get_setting('ga_ua')){
