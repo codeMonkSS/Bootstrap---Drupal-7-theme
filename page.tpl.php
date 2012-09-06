@@ -22,13 +22,11 @@
 <div class="container">
 
 	<div class="content">
-		<div class="page-header">
-			<?php print render($page['header']); ?>
-		</div>
 		<div class="row">
 			<div class="span16">
 				<?php print render($page['help']); ?>
 				<?php print render($page['highlighted']); ?>
+				<?php print render($page['header']); ?>
 			</div>
 		</div>
 		<div class="row">
