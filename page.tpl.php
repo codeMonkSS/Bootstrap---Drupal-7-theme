@@ -40,10 +40,10 @@
 	<footer>
 		<div class="row">
 			<div class="span8">
-				<?php print render($page['footer-col1']); ?>
+				<?php print render($page['footer-col1']); ?>&nbsp;
 			</div>
 			<div class="span8">
-				<?php print render($page['footer-col2']); ?>
+				<?php print render($page['footer-col2']); ?>&nbsp;
 			</div>
 		</div>
 	</footer>
