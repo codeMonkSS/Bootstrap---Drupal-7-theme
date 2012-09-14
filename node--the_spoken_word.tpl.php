@@ -8,7 +8,7 @@
 			<?php
 			$body = bootstrap_getFieldValue($node, 'body');
 			if($body){
-				echo '<div style="float: left; font-size: 80px; color: #c0c0c0; margin: 0 10px 10px 0;">&rdquo;</div>'
+				echo '<div class="quo">&rdquo;</div>'
 				echo $body[0];
 			}
 			$author = bootstrap_getFieldValue($node, 'field_tsw_author');
