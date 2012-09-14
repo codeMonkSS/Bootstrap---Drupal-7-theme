@@ -1,15 +1,23 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 	<h1><?= render($title) ?></h1>
 	<div class="row">
+		<div class="span4">
+			&nbsp;
+		</div>
 		<div class="span8">
 			<?php
 			$body = bootstrap_getFieldValue($node, 'body');
 			if($body){
 				echo $body[0];
 			}
+			$author = bootstrap_getFieldValue($node, 'field_tsw_author');
+			if($author){
+				echo '<p>'.$author[0].'</p>';
+			}
 			?>
 		</div>
-		<div class="span8">
+		<div class="span4">
+			&nbsp;
 		</div>
 	</div>
 	<div class="row">
