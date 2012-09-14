@@ -79,7 +79,11 @@ div.imageborder.float-right {
 }
 .quo {
   float: left;
-  font-size: 80px;
-  color: #c0c0c0;
+  height: 81px;
+  width: 76px;
+  background: url('g/quo.png') no-repeat center center;
   margin: 0 10px 10px 0;
+}
+.quo > span {
+  visibility: hidden;
 }
