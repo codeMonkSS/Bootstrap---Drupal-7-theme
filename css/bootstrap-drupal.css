@@ -87,3 +87,6 @@ div.imageborder.float-right {
 .quo > span {
   visibility: hidden;
 }
+.border-bottom {
+  border-bottom: 1px solid #DDD;
+}
