@@ -130,3 +130,6 @@ form#comment-form.comment-form > div > div#edit-actions.form-actions.form-wrappe
   color: #333;
   text-decoration: none;
 }
+.wishlist-row > td {
+  width: 470px;
+}
