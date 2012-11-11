@@ -1,7 +1,12 @@
 <div class="topbar">
 	<div class="fill">
 		<div class="container">
-			<a class="brand" href="/"><?= $site_name ?></a>
+		    <?php if(!theme_get_setting('rsnm')){
+		        ?>
+		        <a class="brand" href="/"><?= $site_name ?></a>
+		        <?php
+		    }
+		    ?>
 			<?php print theme('links__system_main_menu', array(
 			      'links' => $main_menu,
 			      'attributes' => array(

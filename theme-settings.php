@@ -20,4 +20,13 @@ function bootstrap_form_system_theme_settings_alter(&$form, &$form_state) {
 		'#title' => t('Use analytics on users how is logged in'),
 		'#default_value' => theme_get_setting('ga_login'),
 	);
+	$form['bootstrap_settings']['menusitename'] = array(
+	    '#type' => 'fieldset',
+	    '#title' => t('Site name in menu')
+	);
+	$form['bootstrap_settings']['menusitename']['rsnm'] = array(
+		'#type' => 'checkbox',
+		'#title' => t('Remove site name from menu'),
+		'#default_value' => theme_get_setting('rsnm'),
+	);
 }
